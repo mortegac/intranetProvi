@@ -1,0 +1,388 @@
+
+
+ const code= [
+                {
+                "code": 1000,
+                "day": "Sunny",
+                "night": "Clear",
+                "traslate":"Soleado",
+                "style":"sunny",
+                "icon": 113
+                },
+                {
+                "code": 1003,
+                "day": "Partly cloudy",
+                "night": "Partly cloudy",
+                "traslate":"Parcialmente Nublado",
+                "style":"cloudy",
+                "icon": 116
+                },
+                {
+                "code": 1006,
+                "day": "Cloudy",
+                "night": "Cloudy",
+                "traslate":"Nublado",
+                "style":"cloudy",
+                "icon": 119
+                },
+                {
+                "code": 1009,
+                "day": "Overcast",
+                "night": "Overcast",
+                "traslate":"Nublado",
+                "style":"cloudy",
+                "icon": 122
+                },
+                {
+                "code": 1030,
+                "day": "Mist",
+                "night": "Mist",
+                "traslate":"Niebla",
+                "style":"cloudy",
+                "icon": 143
+                },
+                {
+                "code": 1063,
+                "day": "Patchy rain possible",
+                "night": "Patchy rain possible",
+                "traslate":"Lluvia",
+                "style":"rain",
+                "icon": 176
+                },
+                {
+                "code": 1066,
+                "day": "Patchy snow possible",
+                "night": "Patchy snow possible",
+                "traslate":"Nieve",
+                "style":"snow",
+                "icon": 179
+                },
+                {
+                "code": 1069,
+                "day": "Patchy sleet possible",
+                "night": "Patchy sleet possible",
+                "traslate":"Agua Nieve",
+                "style":"snow",
+                "icon": 182
+                },
+                {
+                "code": 1072,
+                "day": "Patchy freezing drizzle possible",
+                "night": "Patchy freezing drizzle possible",
+                "traslate":"Llovizna",
+                "style":"rain",
+                "icon": 185
+                },
+                {
+                "code": 1087,
+                "day": "Thundery outbreaks possible",
+                "night": "Thundery outbreaks possible",
+                "traslate":"Posible Tormenta",
+                "style":"storm",
+                "icon": 200
+                },
+                {
+                "code": 1114,
+                "day": "Blowing snow",
+                "night": "Blowing snow",
+                "traslate":"Nieve",
+                "style":"snow",
+                "icon": 227
+                },
+                {
+                "code": 1117,
+                "day": "Blizzard",
+                "night": "Blizzard",
+                "traslate":"Tormenta de Nieve",
+                "style":"snow",
+                "icon": 230
+                },
+                {
+                "code": 1135,
+                "day": "Fog",
+                "night": "Fog",
+                "traslate":"Niebla",
+                "style":"cloudy",
+                "icon": 248
+                },
+                {
+                "code": 1147,
+                "day": "Freezing fog",
+                "night": "Freezing fog",
+                "traslate":"Niebla",
+                "style":"cloudy",
+                "icon": 260
+                },
+                {
+                "code": 1150,
+                "day": "Patchy light drizzle",
+                "night": "Patchy light drizzle",
+                "traslate":"Llovizna",
+                "style":"rain",
+                "icon": 263
+                },
+                {
+                "code": 1153,
+                "day": "Light drizzle",
+                "night": "Light drizzle",
+                "traslate":"Llovizna",
+                "style":"rain",
+                "icon": 266
+                },
+                {
+                "code": 1168,
+                "day": "Freezing drizzle",
+                "night": "Freezing drizzle",
+                "traslate":"Llovizna",
+                "style":"rain",
+                "icon": 281
+                },
+                {
+                "code": 1171,
+                "day": "Heavy freezing drizzle",
+                "night": "Heavy freezing drizzle",
+                "traslate":"Llovizna",
+                "style":"rain",
+                "icon": 284
+                },
+                {
+                "code": 1180,
+                "day": "Patchy light rain",
+                "night": "Patchy light rain",
+                "traslate":"Lluvia Ligera",
+                "style":"rain",
+                "icon": 293
+                },
+                {
+                "code": 1183,
+                "day": "Light rain",
+                "night": "Light rain",
+                "traslate":"Lluvia Ligera",
+                "style":"rain",
+                "icon": 296
+                },
+                {
+                "code": 1186,
+                "day": "Moderate rain at times",
+                "night": "Moderate rain at times",
+                "traslate":"Lluvia Moderada",
+                "style":"rain",
+                "icon": 299
+                },
+                {
+                "code": 1189,
+                "day": "Moderate rain",
+                "night": "Moderate rain",
+                "traslate":"Lluvia Moderada",
+                "style":"rain",
+                "icon": 302
+                },
+                {
+                "code": 1192,
+                "day": "Heavy rain at times",
+                "night": "Heavy rain at times",
+                "traslate":"Lluvia Intensa",
+                "style":"rain",
+                "icon": 305
+                },
+                {
+                "code": 1195,
+                "day": "Heavy rain",
+                "night": "Heavy rain",
+                "traslate":"Lluvia Intensa",
+                "style":"rain",
+                "icon": 308
+                },
+                {
+                "code": 1198,
+                "day": "Light freezing rain",
+                "night": "Light freezing rain",
+                "traslate":"Lluvia Ligera",
+                "style":"rain",
+                "icon": 311
+                },
+                {
+                "code": 1201,
+                "day": "Moderate or heavy freezing rain",
+                "night": "Moderate or heavy freezing rain",
+                "traslate":"Lluvia Moderada",
+                "style":"rain",
+                "icon": 314
+                },
+                {
+                "code": 1204,
+                "day": "Light sleet",
+                "night": "Light sleet",
+                "traslate":"",
+                "style":"",
+                "icon": 317
+                },
+                {
+                "code": 1207,
+                "day": "Moderate or heavy sleet",
+                "night": "Moderate or heavy sleet",
+                "traslate":"Agua Nieve",
+                "style":"snow",
+                "icon": 320
+                },
+                {
+                "code": 1210,
+                "day": "Patchy light snow",
+                "night": "Patchy light snow",
+                "traslate":"Niebla",
+                "style":"cloudy",
+                "icon": 323
+                },
+                {
+                "code": 1213,
+                "day": "Light snow",
+                "night": "Light snow",
+                "traslate":"Nieve Moderada",
+                "style":"snow",
+                "icon": 326
+                },
+                {
+                "code": 1216,
+                "day": "Patchy moderate snow",
+                "night": "Patchy moderate snow",
+                "traslate":"Nieve Moderada",
+                "style":"snow",
+                "icon": 329
+                },
+                {
+                "code": 1219,
+                "day": "Moderate snow",
+                "night": "Moderate snow",
+                "traslate":"Nieve Moderada",
+                "style":"snow",
+                "icon": 332
+                },
+                {
+                "code": 1222,
+                "day": "Patchy heavy snow",
+                "night": "Patchy heavy snow",
+                "traslate":"Nieve",
+                "style":"snow",
+                "icon": 335
+                },
+                {
+                "code": 1225,
+                "day": "Heavy snow",
+                "night": "Heavy snow",
+                "traslate":"Nieve",
+                "style":"snow",
+                "icon": 338
+                },
+                {
+                "code": 1237,
+                "day": "Ice pellets",
+                "night": "Ice pellets",
+                "traslate":"Nieve",
+                "style":"snow",
+                "icon": 350
+                },
+                {
+                "code": 1240,
+                "day": "Light rain shower",
+                "night": "Light rain shower",
+                "traslate":"Lluvia Ligera",
+                "style":"rain",
+                "icon": 353
+                },
+                {
+                "code": 1243,
+                "day": "Moderate or heavy rain shower",
+                "night": "Moderate or heavy rain shower",
+                "traslate":"Lluvia Moderada",
+                "style":"rain",
+                "icon": 356
+                },
+                {
+                "code": 1246,
+                "day": "Torrential rain shower",
+                "night": "Torrential rain shower",
+                "traslate":"Lluvia",
+                "style":"rain",
+                "icon": 359
+                },
+                {
+                "code": 1249,
+                "day": "Light sleet showers",
+                "night": "Light sleet showers",
+                "traslate":"Lluvia",
+                "style":"rain",
+                "icon": 362
+                },
+                {
+                "code": 1252,
+                "day": "Moderate or heavy sleet showers",
+                "night": "Moderate or heavy sleet showers",
+                "traslate":"Lluvia",
+                "style":"rain",
+                "icon": 365
+                },
+                {
+                "code": 1255,
+                "day": "Light snow showers",
+                "night": "Light snow showers",
+                "traslate":"",
+                "style":"",
+                "icon": 368
+                },
+                {
+                "code": 1258,
+                "day": "Moderate or heavy snow showers",
+                "night": "Moderate or heavy snow showers",
+                "traslate":"Chubascos de Nieve",
+                "style":"snow",
+                "icon": 371
+                },
+                {
+                "code": 1261,
+                "day": "Light showers of ice pellets",
+                "night": "Light showers of ice pellets",
+                "traslate":"Lluvia Ligera",
+                "style":"rain",
+                "icon": 374
+                },
+                {
+                "code": 1264,
+                "day": "Moderate or heavy showers of ice pellets",
+                "night": "Moderate or heavy showers of ice pellets",
+                "traslate":"Lluvia Moderada",
+                "style":"rain",
+                "icon": 377
+                },
+                {
+                "code": 1273,
+                "day": "Patchy light rain with thunder",
+                "night": "Patchy light rain with thunder",
+                "traslate":"Truenos",
+                "style":"storm",
+                "icon": 386
+                },
+                {
+                "code": 1276,
+                "day": "Moderate or heavy rain with thunder",
+                "night": "Moderate or heavy rain with thunder",
+                "traslate":"Lluvia Moderada",
+                "style":"rain",
+                "icon": 389
+                },
+                {
+                "code": 1279,
+                "day": "Patchy light snow with thunder",
+                "night": "Patchy light snow with thunder",
+                "traslate":"Niebla",
+                "style":"cloudy",
+                "icon": 392
+                },
+                {
+                "code": 1282,
+                "day": "Moderate or heavy snow with thunder",
+                "night": "Moderate or heavy snow with thunder",
+                "traslate":"Nieve Moderada",
+                "style":"snow",
+                "icon": 395
+                }
+            ]

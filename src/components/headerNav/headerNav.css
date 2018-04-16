@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"); */
+
+
+.nav { 
+    border-bottom: 10px #e0eaef solid;
+    font-family: 'Open Sans',Helvetica,Arial,Sans-Serif;
+}
+.nav ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    background: #FFFFFF url(./images/s5_menu_bg.png) repeat-x bottom left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+.nav li{
+    display: block;
+    list-style: none;
+    position: relative;
+    float: left;
+    height: 36px;
+    padding-right: 8px;
+    padding-top: 7px;
+    padding-bottom: 0px; 
+    padding-left: 8px;
+    overflow: hidden;
+}
+
+
+/* .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #FFFFFF url(./images/s5_menu_bg.png) repeat-x bottom left;
+} */
+
+
+
+.nav li:hover a {
+    color: #000000;
+}
+.nav li.active li:hover {
+    height:32px;
+    display:block;
+}
+.nav li:hover {
+    background:#fb3e59;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    color: #000;
+    font-size: 18px;
+    /* font-weight: bold; */
+    padding: 0px 20px 0px 12px;
+    background: url(./images/separador-punto.png) no-repeat right center;
+
+}
+
+
+/* @media (max-width: 1135px){ display:none; }     */
+
+@media screen and (max-width: 1120px) {
+    
+    .nav li a { padding: 0px 22px 0px 12px;}
+    
+}
+@media screen and (max-width: 982px) {
+    
+    .nav li a { padding: 0px 14px 0px 8px;}
+    
+}
+@media screen and (max-width: 902px) {
+    
+    .nav li a { padding: 0px 14px 0px 6px;}
+}
+@media screen and (max-width: 890px) {
+    
+    .nav li a { padding: 0px 2px 0px 2px;}
+    .nav li a { background:none;}
+}
+
+@media screen and (max-width: 710px) {
+    
+    .nav nav li { width: 30%;}
+    .nav li a { background:none;}
+    
+}
+@media screen and (max-width: 535px) {
+    
+    .nav nav li { width: 100%;}
+    .nav li a { background:none;}
+    
+}
+
+
+/* OPCION DOS */
+/* 
+#Nav-menu {
+    width: 100%;
+    height: 90%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#Nav-menu li{
+    background-color: white;
+    text-align: center;
+    flex-grow: 1;
+} */
